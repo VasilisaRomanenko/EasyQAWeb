@@ -36,7 +36,7 @@ public class ImportExport extends BaseTest{
         driver.findElement(By.xpath(".//*[@id='test_plan_id_csv']/div/a")).click();
         Thread.sleep(2000);
         driver.findElement(By.xpath(".//*[@id='test_plan_id_csv']/ul/li[2]/a/label")).click();
-        //визиваю метод атач фа йл
+        //визиваю метод атач файл
         AttachFile attachFile = new AttachFile();
         attachFile.attachFileToLead(driver);
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
